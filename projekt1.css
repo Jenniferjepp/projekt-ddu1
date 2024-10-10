@@ -96,6 +96,34 @@ p {
     width: 450px;
 }
 
+#brand-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 100px;
+
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+#row1 {
+    display: flex;
+    gap: 40px;
+}
+
+#row2 {
+    display: flex;
+    gap: 40px;
+}
+
+#brand-box img {
+    width: 90px;
+    object-fit: contain;
+}
 
 /* FÄRGER:
 #050505, #121212, #353535, #666666, #7f7f7f, #999999, #e5e5e5, #f4f4f4 och #087fe7 */
