@@ -50,7 +50,7 @@ header {
     padding-right: 20px;
 }
 
-#nav-button {
+.barky-button {
     background-color: black;
     color: white;
     text-decoration: none;
@@ -59,8 +59,43 @@ header {
 }
 
 main {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1000px;
+    margin: 80px auto 0;
+}
+
+p {
+    color: #666666;
 }
 
 /* BOX 1 */
+
+#box1 {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+
+#box1-left { }
+
+
+#box1-h1 {
+    font-size: 53px;
+    font-weight: 650;
+}
+
+#box1-p {
+    font-size: 18px;
+    font-weight: 320;
+}
+
+/* ÄNDRA STORLEK PÅ FONT OCH PADDING
+#box1-button { } */
+
+#box1-img {
+    width: 450px;
+}
+
+
+/* FÄRGER:
+#050505, #121212, #353535, #666666, #7f7f7f, #999999, #e5e5e5, #f4f4f4 och #087fe7 */
