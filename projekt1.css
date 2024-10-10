@@ -1,5 +1,11 @@
 body {
     margin-top: 0;
+    font-family: "inter";
+}
+
+@font-face {
+    font-family: "inter";
+    src: url(../material/Inter.ttf);
 }
 
 header {
@@ -48,6 +54,13 @@ header {
     background-color: black;
     color: white;
     text-decoration: none;
-   padding: 5px;
-   border-radius: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* BOX 1 */
