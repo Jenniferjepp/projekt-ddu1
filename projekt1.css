@@ -14,6 +14,12 @@ header {
     justify-content: space-between;
     border-bottom: 1px solid #e5e5e5;
     align-items: center;
+
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 20px;
+    right: 20px;
 }
 
 #nav-left {
@@ -56,7 +62,7 @@ header {
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(127, 127, 127, 0.3);
+    box-shadow: 0px 0px 20px rgba(127, 127, 127, 0.2);
 }
 
 main {
@@ -74,16 +80,22 @@ p {
 
 #box1 {
     display: flex;
-    gap: 100px;
     align-items: center;
 }
 
 
-#box1-left { }
+#box1-left { 
+    padding-right: 40px:
+}
+
+#box1-right {
+    padding: ;
+    
+}
 
 
 #box1-h1 {
-    font-size: 53px;
+    font-size: 45px;
     font-weight: 650;
 }
 
@@ -97,8 +109,8 @@ p {
 #box1-button { } */
 
 #box1-img {
-    width: 450px;
-    
+    width: 100%;
+
 }
 
 #brand-box {
@@ -162,7 +174,7 @@ h3 {
 
 .big-images {
     width: 1000px;
-    box-shadow: 0px 4px 8px rgba(127, 127, 127, 0.3);
+    box-shadow: 0px 0px 20px rgba(127, 127, 127, 0.2);
     border-radius: 8px;
 }
 
@@ -302,6 +314,100 @@ footer {
 
 #brand-img-footer {
     width: 160px;
+}
+
+#box-6 {
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+    margin-bottom: 60px;
+    
+}
+
+#box-6 h1 {
+    margin-bottom: 0;
+    margin-top: 80px;
+}
+
+#emoji-big-box {
+    display: flex;
+    text-align: center;
+    gap: 55px;
+}
+
+#emoji-big-box a {
+    color: black;
+}
+
+#emoji-big-box h3 {
+    font-size: 24px;
+    font-weight: 550;
+}
+
+#emoji-big-box p {
+    font-size: 15px;
+}
+
+#middle-emoji {
+    border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*
+#left-emoji {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+#right-emoji {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+    */
+
+
+#box-7 {
+    display: flex;
+    gap: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#box-7 img {
+    width: 100%;
+}
+
+#h1-box7 {
+    margin-top: 80px;
+    text-align: center;
+}
+
+
+#percent-big-box {
+    display: flex;
+    text-align: center;
+}
+
+#percent-big-box h2 {
+    color: #666666;
+    font-size: 45px;
+    font-weight: 650;
+}
+
+.percent-borders {
+    border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+}
+
+.percent-boxes {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+#box-8 {
+    text-align: center;
+    margin-bottom: 80px;
 }
 
 /* FÄRGER:
