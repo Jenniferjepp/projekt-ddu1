@@ -85,6 +85,11 @@ header {
     text-decoration: underline;
 }
 
+#emoji-big-box a:hover {
+    color: #087fe7;
+    text-decoration: underline black;
+}
+
 /* FÄRGER:
 #050505, #121212, #353535, #666666, #7f7f7f, #999999, #e5e5e5, #f4f4f4 och #087fe7 */
 
@@ -107,8 +112,6 @@ p {
     gap: 30px;
     margin-top: 140px;
 }
-
-
 
 .box1-boxes {
     flex-basis: 0;
@@ -135,7 +138,6 @@ p {
 
 #box1-img {
     width: 100%;
-    
 }
 
 #brand-box {
@@ -198,7 +200,7 @@ h3 {
 }
 
 .big-images {
-    width: 1000px;
+    width: 100%;
     box-shadow: 0px 0px 20px rgba(127, 127, 127, 0.3);
     border-radius: 8px;
 }
@@ -319,68 +321,97 @@ h2 {
     font-size: 15px;
 }
 
-#middle-emoji {
+.emoji-boxes {
+    flex-basis: 0;
+    flex-grow: 1;
     border-right: 1px solid #e5e5e5;
-    border-left: 1px solid #e5e5e5;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-/*
-#left-emoji {
-    margin-right: 20px;
-    margin-left: 10px;
-}
+    padding: 0 25px;
+} 
 
 #right-emoji {
-    margin-left: 20px;
-    margin-right: 10px;
+    border-right: none;
 }
-    */
 
+
+/* BOX 7 */
+#h1-box7 {
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 120px;
+}
 
 #box-7 {
     display: flex;
     gap: 50px;
     padding-left: 30px;
     padding-right: 30px;
+    align-items: center;
 }
 
 #box-7 img {
-    width: 100%;
+    width: 130%;
 }
 
-#h1-box7 {
-    margin-top: 80px;
-    text-align: center;
+#box-7 h3 {
+    font-size: 18px;
+    font-weight: 650;
+}
+
+#box-7 a {
+    color: black;
+}
+
+#box-7 p {
+    color: black;
 }
 
 
+/* PERCENT BOX */
 #percent-big-box {
     display: flex;
     text-align: center;
+    margin-top: 60px;
+    margin-bottom: 90px;
 }
 
 #percent-big-box h2 {
     color: #666666;
     font-size: 45px;
     font-weight: 650;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
-.percent-borders {
-    border-right: 1px solid #e5e5e5;
-    border-left: 1px solid #e5e5e5;
+#percent-big-box p {
+    margin: 0;
 }
 
 .percent-boxes {
     flex-basis: 0;
     flex-grow: 1;
+    border-right: 1px solid #e5e5e5;
 }
 
+#last-percent-box {
+    border-right: none;
+}
+
+/* BOX 8 */
 #box-8 {
     text-align: center;
     margin-bottom: 80px;
 }
+
+#box-8 h1 {
+    margin-bottom: 10px;
+}
+
+#box-8 p {
+    margin-bottom: 25px;
+}
+
+
 
 /* FOOTER */
 footer {
