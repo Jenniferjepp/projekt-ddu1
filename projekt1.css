@@ -11,10 +11,10 @@ body {
 header {
     height: 60px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #e5e5e5;
-    align-items: center;
-
+    
     background-color: white;
     position: fixed;
     top: 0;
@@ -64,8 +64,13 @@ header {
     text-decoration: none;
     padding: 8px 12px;
     border-radius: 5px;
-    box-shadow: 0px 0px 20px rgba(127, 127, 127, 0.2);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     font-size: 15px;
+}
+
+#hamburger {
+    display: none;
+    padding: 5px 8px;
 }
 
 /* HOVER */
@@ -90,8 +95,6 @@ header {
     text-decoration: underline black;
 }
 
-/* FÄRGER:
-#050505, #121212, #353535, #666666, #7f7f7f, #999999, #e5e5e5, #f4f4f4 och #087fe7 */
 
 main {
     max-width: 1000px;
@@ -101,8 +104,8 @@ main {
 p {
     color: #666666;
     font-weight: 320;
-    
 }
+
 
 /* BOX 1 */
 
@@ -145,9 +148,8 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px;
-    height: 100px;
-
+    gap: 20px;
+    
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
     margin-top: 80px;
@@ -165,7 +167,7 @@ p {
 }
 
 #brand-box img {
-    width: 90px;
+    height: 20px;
     object-fit: contain;
 }
 
@@ -201,7 +203,7 @@ h3 {
 
 .big-images {
     width: 100%;
-    box-shadow: 0px 0px 20px rgba(127, 127, 127, 0.3);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
@@ -212,18 +214,18 @@ h2 {
     color: #999999;
 }
 
-#box-trio {
+.box-trio {
     margin-top: 80px;
 }
 
-#box-trio p {
+.box-trio p {
     width: 480px;
     margin-top: 10px;
     padding-bottom: 25px;
     line-height: 25px;
 }
 
-#box-trio h1 {
+.box-trio h1 {
     margin: 0;
     font-weight: 650;
     font-size: 36px;
@@ -421,8 +423,8 @@ footer {
 #footer-box {
     max-width: 1200px;
     margin: 80px auto;
-    display: flex;
-    gap: 100px;
+   display: flex;
+   gap: 100px;
 }
 
 #footer-box a {
@@ -438,6 +440,11 @@ footer {
 
 #footer-icon-box {
     width: 230px;
+}
+
+#footer-link-box {
+    display: flex;
+    gap: 100px;
 }
 
 .links-footer {
@@ -469,6 +476,146 @@ footer {
 #brand-img-footer {
     width: 160px;
 }
+
+
+@media (max-width: 600px) {
+ 
+    header a {
+        display: none;
+    }
+
+    header {
+        border: none;
+        max-width: 590px;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+
+    #middle-border-nav {
+        display: none;
+    }
+
+    #hamburger {
+        display: flex;
+        height: 25px;
+    }
+
+    #hamburger:hover {
+        background-color: #f4f4f4;
+        padding: 5px 8px;
+        border-radius: 5px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    #box1 {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    #box1 h1 {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #box1 p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #brand-box img{
+        padding: 0 5px;
+    }
+
+    #row1 {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    #row2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box-trio {
+        text-align: center;
+    }
+
+    .box-trio p {
+        width: 100%;
+    }
+
+    .box-trio h2 {
+        font-size: 26px;
+    }
+
+    #emoji-big-box {
+        flex-direction: column;
+        gap: 40px;
+        
+    }
+
+    .emoji-boxes {
+        border-right: none;
+    }
+
+    #box-7 {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #box-7 h3 {
+        font-size: 24px;
+    }
+
+    #box-7 p {
+        margin-top: 10px;
+    }
+
+    #box-7 img {
+        width: 100%;
+    }
+
+    #percent-big-box {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .percent-boxes {
+        border-right: none;
+    }
+
+
+    #footer-box {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    #footer-icon-box {
+        width: 100%;
+    }
+
+    #app-icons {
+        margin-bottom: 30px;
+    }
+    
+    #footer-link-box {
+        flex-wrap: wrap;
+        width: 80%;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    
+
+}
+    
 
 /* FÄRGER:
 #050505, #121212, #353535, #666666, #7f7f7f, #999999, #e5e5e5, #f4f4f4 och #087fe7 */
