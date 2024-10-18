@@ -8,10 +8,10 @@ body {
     src: url(material/Inter.ttf);
 }
 
+/* HEADER */
 header {
     height: 60px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #e5e5e5;
     
@@ -28,6 +28,12 @@ header {
     gap: 20px;
 }
 
+#nav-img {
+    width: 100px;
+    height: 50px;
+    display: flex;
+}
+
 #nav-left-text {
     display: flex;
     gap: 10px;
@@ -36,13 +42,6 @@ header {
 #nav-right {
     display: flex;
     gap: 10px;
-    align-items: center;
-}
-
-#nav-img {
-    width: 100px;
-    height: 50px;
-    display: flex;
     align-items: center;
 }
 
@@ -75,18 +74,11 @@ header {
 }
 
 /* HOVER */
-.nav-text:hover {
-    background-color: #f4f4f4;
-    padding: 5px 8px;
-}
+.nav-text:hover { background-color: #f4f4f4; }
 
-.barky-button:hover {
-    background-color: rgb(0, 0, 0, 0.8);
-}
+.barky-button:hover { background-color: rgb(0, 0, 0, 0.8); }
 
-#footer-box a:hover {
-    text-decoration: underline;
-}
+#footer-box a:hover { text-decoration: underline; }
 
 #emoji-big-box a:hover {
     color: #087fe7;
@@ -94,6 +86,7 @@ header {
 }
 
 
+/* GENERAL */
 main {
     max-width: 1000px;
     margin: 140px auto 0;
@@ -102,11 +95,11 @@ main {
 p {
     color: #666666;
     font-weight: 320;
+    line-height: 22px;
 }
 
 
 /* BOX 1 */
-
 #box1 {
     display: flex;
     align-items: center;
@@ -118,9 +111,7 @@ p {
     flex-grow: 1;
 }
 
-#box1-right {
-    padding-left: 60px;
-}
+#box1-right { padding-left: 60px; }
 
 #box1-h1 {
     font-size: 45px;
@@ -133,30 +124,22 @@ p {
     line-height: 25px;
 }
 
-#box1-img {
-    width: 100%;
-}
+#box1-img { width: 100%; }
 
 /* BRAND BOX */
 #brand-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    gap: 25px;
     
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
     margin-top: 80px;
-    padding: 20px;
+    padding: 25px;
 }
 
-#row1 {
-    display: flex;
-    gap: 40px;
-}
-
-#row2 {
+.rows {
     display: flex;
     gap: 40px;
 }
@@ -168,22 +151,16 @@ p {
 
 
 /* BOX 2, 3, 4 */
-
-.box-trio {
-    margin-top: 80px;
-}
+.box-trio {  margin-top: 80px; }
 
 .box-trio h1 {
-    margin: 0;
-    margin-right: 550px;
+    margin: 0 550px 0 0;
     font-weight: 650;
     font-size: 36px;
 }
 
 .box-trio p {
-    margin-right: 530px;
-    margin-top: 10px;
-    padding-bottom: 25px;
+    margin: 10px 530px 40px 0;
     line-height: 25px;
 }
 
@@ -198,7 +175,7 @@ h2 {
     font-size: 36px;
     font-weight: 550;
     color: #999999;
-    margin: 30px 30px;
+    margin: 30px;
 }
 
 /* FACES */
@@ -216,9 +193,7 @@ h2 {
 .face-boxes p {
     font-size: 12px;
     color: #999999;
-    font-weight: 320;
     margin: 0;
-    padding-bottom: 0;
 }
 
 h3 {
@@ -263,9 +238,7 @@ h3 {
     border-radius: 8px;
 }
 
-.check {
-    width: 20px;
-}
+.check {  width: 20px; }
 
 .bullets {
     display: flex;
@@ -296,10 +269,7 @@ h3 {
     margin-bottom: 60px;
 }
 
-#box-6 h1 {
-    margin-bottom: 0;
-    margin-top: 80px;
-}
+#box-6 h1 { margin: 80px 0 0 0; }
 
 /* EMOJI */
 #emoji-big-box {
@@ -308,18 +278,14 @@ h3 {
     justify-content: space-evenly;
 }
 
-#emoji-big-box a {
-    color: black;
-}
+#emoji-big-box a { color: black; }
 
 #emoji-big-box h3 {
     font-size: 24px;
     font-weight: 550;
 }
 
-#emoji-big-box p {
-    font-size: 15px;
-}
+#emoji-big-box p { font-size: 15px; }
 
 .emoji-boxes {
     flex-basis: 0;
@@ -328,64 +294,49 @@ h3 {
     padding: 0 25px;
 } 
 
-#right-emoji {
-    border-right: none;
-}
+#right-emoji { border-right: none; }
 
 
 /* BOX 7 */
 #h1-box7 {
-    margin-top: 80px;
+    margin: 120px 0 40px 0;
     text-align: center;
-    margin-bottom: 40px;
-    margin-top: 120px; /* HALLÅ 2 MARGIN??*/
 }
 
 #box-7 {
     display: flex;
     gap: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 30px 0 30px;
     align-items: center;
 }
 
-#box-7 img {
-    width: 130%;
-}
+#box-7 img { width: 130%; }
 
 #box-7 h3 {
     font-size: 18px;
     font-weight: 650;
 }
 
-#box-7 a {
-    color: black;
-}
+#box-7 a { color: black; }
 
-#box-7 p {
-    color: black;
-}
+#box-7 p { color: black; }
 
 
 /* PERCENT BOX */
 #percent-big-box {
     display: flex;
     text-align: center;
-    margin-top: 60px;
-    margin-bottom: 90px;
+    margin: 60px 0 90px 0;
 }
 
 #percent-big-box h2 {
     color: #666666;
     font-size: 45px;
     font-weight: 650;
-    margin-top: 0;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
 }
 
-#percent-big-box p {
-    margin: 0;
-}
+#percent-big-box p { margin: 0; }
 
 .percent-boxes {
     flex-basis: 0;
@@ -407,22 +358,18 @@ h3 {
     margin-bottom: 10px;
 }
 
-#box-8 p {
-    margin-bottom: 25px;
-}
+#box-8 p { margin-bottom: 25px; }
 
 
 
 /* FOOTER */
-footer {
-    border-top: 1px solid #e5e5e5;
-}
+footer { border-top: 1px solid #e5e5e5; }
 
 #footer-box {
     max-width: 1200px;
     margin: 80px auto;
     display: flex;
-     gap: 100px;
+    gap: 100px;
 }
 
 #footer-box a {
@@ -436,15 +383,12 @@ footer {
     color: black;
 }
 
-#footer-icon-box {
-    width: 230px;
-}
+#footer-icon-box { width: 230px; }
 
 #footer-link-box {
     display: flex;
     gap: 100px;
 }
-
 
 .links-footer {
     display: flex;
@@ -455,8 +399,7 @@ footer {
     font-weight: 550;
     color: black;
     font-size: 14px;
-    margin-bottom: 5px;
-    margin-top: 0;
+    margin: 0 0 5px 0;
 }
 
 .links-footer a {
@@ -468,13 +411,10 @@ footer {
     width: 25px;
     display: flex;
     gap: 10px;
-    margin-top: 25px;
-    margin-bottom: 60px;
+    margin: 25px 0 60px 0;
 }
 
-#brand-img-footer {
-    width: 160px;
-}
+#brand-img-footer { width: 160px; }
 
 
 /* MOBIL-ANPASSNING */
@@ -482,9 +422,7 @@ footer {
 
 /* HEADER */
 
-    header a {
-        display: none;
-    }
+    header a { display: none; }
 
     header {
         border: none;
@@ -495,9 +433,7 @@ footer {
         right: 0;
     }
 
-    #middle-border-nav {
-        display: none;
-    }
+    #middle-border-nav { display: none; }
 
     #hamburger {
         display: flex;
@@ -523,20 +459,12 @@ footer {
         margin-top: 80px;
     }
 
-    #box1 h1 {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
+    #box1 h1 { margin: 30px 50px; }
 
-    #box1 p {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+    #box1 p { margin: 18px 20px; }
 
     /* BRAND BOX */
-    #brand-box img{
-        padding: 0 5px;
-    }
+    #brand-box img{ padding: 0 5px; }
 
     #row1 {
         flex-wrap: wrap;
@@ -550,21 +478,13 @@ footer {
     }
 
     /* BOX 2,3,4 */
-    .box-trio {
-        text-align: center;
-    }
+    .box-trio { text-align: center; }
 
-    .box-trio h1 {
-        width: 100%;
-    }
+    .box-trio h1 { width: 100%; }
 
-    .box-trio p {
-        width: 100%;
-    }
+    .box-trio p { width: 100%; }
 
-    .box-trio h2 {
-        font-size: 26px;
-    }
+    .box-trio h2 { font-size: 26px; }
 
     /* EMOJI BOX */
     #emoji-big-box {
@@ -572,9 +492,7 @@ footer {
         gap: 40px;
     }
 
-    .emoji-boxes {
-        border-right: none;
-    }
+    .emoji-boxes { border-right: none; }
 
     /* BOX 7 */
     #box-7 {
@@ -582,17 +500,11 @@ footer {
         padding: 0;
     }
 
-    #box-7 h3 {
-        font-size: 24px;
-    }
+    #box-7 h3 { font-size: 24px; }
 
-    #box-7 p {
-        margin-top: 10px;
-    }
+    #box-7 p { margin-top: 10px; }
 
-    #box-7 img {
-        width: 100%;
-    }
+    #box-7 img { width: 100%; }
 
     /* PERCENT BOX */
     #percent-big-box {
@@ -600,9 +512,12 @@ footer {
         gap: 40px;
     }
 
-    .percent-boxes {
-        border-right: none;
-    }
+    .percent-boxes { border-right: none; }
+
+    #percent-big-box h2 { font-size: 53px; }
+
+    #percent-big-box p { font-size: 18px; }
+
 
 /* FOOTER - MÅSTE FIXA KLART */
     #footer-box {
@@ -612,13 +527,9 @@ footer {
         gap: 10px;
     }
 
-    #footer-icon-box {
-        width: 100%;
-    }
+    #footer-icon-box { width: 100%; }
 
-    #app-icons {
-        margin-bottom: 30px;
-    }
+    #app-icons { margin-bottom: 30px; }
     
     #footer-link-box {
         display: grid;
@@ -630,9 +541,7 @@ footer {
     .links-footer {
         flex-direction: column;
         align-items: flex-start;
-        
     }
-
 }
     
 
