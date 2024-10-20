@@ -1,8 +1,9 @@
 body {
-    margin-top: 0;
+    margin: 0 15px;
     font-family: "inter";
 }
 
+/* FONT ALL TEXT */
 @font-face {
     font-family: "inter";
     src: url(material/Inter.ttf);
@@ -18,8 +19,8 @@ header {
     background-color: white;
     position: fixed;
     top: 0;
-    left: 20px;
-    right: 20px;
+    left: 15px;
+    right: 15px;
 }
 
 #nav-left {
@@ -30,13 +31,17 @@ header {
 
 #nav-img {
     width: 100px;
-    height: 50px;
     display: flex;
 }
 
 #nav-left-text {
     display: flex;
     gap: 10px;
+    align-items: center;
+}
+
+.arrow {
+    padding-bottom: 1px;
 }
 
 #nav-right {
@@ -46,7 +51,7 @@ header {
 }
 
 .nav-text {
-    color: black;
+    color: #050505;
     text-decoration: none;
     font-size: 15px;
     padding: 5px 8px;
@@ -59,7 +64,7 @@ header {
 }
 
 .barky-button {
-    background-color: black;
+    background-color: #050505;
     color: white;
     text-decoration: none;
     padding: 8px 12px;
@@ -73,16 +78,17 @@ header {
     padding: 5px 8px;
 }
 
+
 /* HOVER */
 .nav-text:hover { background-color: #f4f4f4; }
 
-.barky-button:hover { background-color: rgb(0, 0, 0, 0.8); }
+.barky-button:hover { background-color: rgb(5, 5, 5, 0.8); }
 
 #footer-box a:hover { text-decoration: underline; }
 
 #emoji-big-box a:hover {
     color: #087fe7;
-    text-decoration: underline black;
+    text-decoration: underline #050505;
 }
 
 
@@ -111,17 +117,19 @@ p {
     flex-grow: 1;
 }
 
-#box1-right { padding-left: 60px; }
-
 #box1-h1 {
     font-size: 45px;
     font-weight: 650;
+    line-height: 50px;
+    margin: 0;
 }
 
 #box1-p {
     font-size: 18px;
     font-weight: 320;
     line-height: 25px;
+    margin: 10px 0 30px;
+    width: 90%;
 }
 
 #box1-img { width: 100%; }
@@ -160,8 +168,9 @@ p {
 }
 
 .box-trio p {
-    margin: 10px 530px 40px 0;
+    margin: 10px 0 40px 0;
     line-height: 25px;
+    width: 47%;
 }
 
 .big-images {
@@ -183,6 +192,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5px;
 }
 
 .faces {
@@ -257,7 +267,7 @@ h3 {
 }
 
 #no-check-p {
-    color: black;
+    color: #050505;
     font-weight: 400;
 }
 
@@ -269,7 +279,14 @@ h3 {
     margin-bottom: 60px;
 }
 
-#box-6 h1 { margin: 80px 0 0 0; }
+#box-6 h1 { 
+    margin: 80px 0 0 0;
+    font-size: 36px;
+}
+
+#box-6 p {
+    margin: 10px 0 0;
+}
 
 /* EMOJI */
 #emoji-big-box {
@@ -278,7 +295,7 @@ h3 {
     justify-content: space-evenly;
 }
 
-#emoji-big-box a { color: black; }
+#emoji-big-box a { color: #050505; }
 
 #emoji-big-box h3 {
     font-size: 24px;
@@ -291,7 +308,7 @@ h3 {
     flex-basis: 0;
     flex-grow: 1;
     border-right: 1px solid #e5e5e5;
-    padding: 0 25px;
+    padding: 0 30px;
 } 
 
 #right-emoji { border-right: none; }
@@ -317,9 +334,9 @@ h3 {
     font-weight: 650;
 }
 
-#box-7 a { color: black; }
+#box-7 a { color: #050505; }
 
-#box-7 p { color: black; }
+#box-7 p { color: #050505; }
 
 
 /* PERCENT BOX */
@@ -380,7 +397,7 @@ footer { border-top: 1px solid #e5e5e5; }
 
 #footer-icon-box p {
     font-size: 13px;
-    color: black;
+    color: #050505;
 }
 
 #footer-icon-box { width: 230px; }
@@ -397,7 +414,7 @@ footer { border-top: 1px solid #e5e5e5; }
 
 .links-footer p {
     font-weight: 550;
-    color: black;
+    color: #050505;
     font-size: 14px;
     margin: 0 0 5px 0;
 }
@@ -449,22 +466,34 @@ footer { border-top: 1px solid #e5e5e5; }
 /* MAIN */
     main {
         width: 95%;
-        margin-top: 90px;
+        margin-top: 80px;
     }
 
     /* BOX 1 */
     #box1 {
         flex-direction: column-reverse;
         text-align: center;
-        margin-top: 80px;
+        gap: 10px;
+        margin: 0 5px 0;
     }
 
-    #box1 h1 { margin: 30px 50px; }
+    #box1 h1 { margin: 0 50px 0; }
 
-    #box1 p { margin: 18px 20px; }
+    #box1 p { 
+        margin: 10px 0 30px;
+        width: 100%;
+    }
+
+    #box1-img {
+        width: 90%;
+    }
 
     /* BRAND BOX */
     #brand-box img{ padding: 0 5px; }
+
+    #brand-box { gap: 15px; }
+
+    .rows { gap: 30px; }
 
     #row1 {
         flex-wrap: wrap;
@@ -482,7 +511,15 @@ footer { border-top: 1px solid #e5e5e5; }
 
     .box-trio h1 { width: 100%; }
 
-    .box-trio p { width: 100%; }
+    .box-trio p { 
+        width: 100%;
+        font-size: 18px;
+    }
+
+    /* BOX 5 */
+    #box-5 p {
+        font-size: 18px;
+    }
 
     .box-trio h2 { font-size: 26px; }
 
@@ -502,7 +539,7 @@ footer { border-top: 1px solid #e5e5e5; }
 
     #box-7 h3 { font-size: 24px; }
 
-    #box-7 p { margin-top: 10px; }
+    #box-7 p { margin: 10px 0 0; }
 
     #box-7 img { width: 100%; }
 
@@ -518,8 +555,15 @@ footer { border-top: 1px solid #e5e5e5; }
 
     #percent-big-box p { font-size: 18px; }
 
+    #box-8 p {
+        font-size: 18px;
+    }
 
-/* FOOTER - MÅSTE FIXA KLART */
+    .barky-button {
+        font-size: 18px;
+    }
+
+/* FOOTER */
     #footer-box {
         display: flex;
         flex-direction: column;
@@ -543,7 +587,3 @@ footer { border-top: 1px solid #e5e5e5; }
         align-items: flex-start;
     }
 }
-    
-
-/* FÄRGER:
-#050505, #121212, #353535, #666666, #7f7f7f, #999999, #e5e5e5, #f4f4f4 och #087fe7 */
